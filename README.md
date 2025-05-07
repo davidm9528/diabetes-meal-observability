@@ -1,6 +1,6 @@
 # Diabetes Observability & Logging System
 
-This project is a structured system for tracking, analyzing, and responding to blood glucose patterns using CGM data and manual logging. It is designed to help people with Type 1 Diabetes identify trends, fine-tune insulin usage, and automate insights for better daily management.
+This project is a structured system for tracking, analysing, and responding to blood glucose patterns using CGM data and manual logging. It is designed to help people with Type 1 Diabetes identify trends, fine-tune insulin usage, and automate insights for better daily management.
 
 ---
 
