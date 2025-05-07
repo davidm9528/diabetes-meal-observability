@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Log Meal</title>
+</head>
+<body>
+  
+<a href="/home">
+  <button type="button">Back to CGM Log</button>
+</a>
+
+  <h2>Log a Meal</h2>
+  <form method="POST" action="/log-meal">
+    <label>Meal:</label><br>
+    <input type="text" name="meal" required><br><br>
+
+    <label>Carbs (g):</label><br>
+    <input type="number" name="carbs" required><br><br>
+
+    <label>Protein (g):</label><br>
+    <input type="number" name="protein" required><br><br>
+
+    <label>Fats (g):</label><br>
+    <input type="number" name="fats" required><br><br>
+
+    <label>Pre-BG (mmol/L):</label><br>
+    <input type="number" step="0.1" name="pre_bg" required><br><br>
+
+    <label>Notes:</label><br>
+    <input type="text" name="notes" value="Anything else?"><br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>

@@ -1,0 +1,17 @@
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+
+venv/
+
+logs/
+scratchpad/
+*.log
+
+.vscode/
+.idea/
+
+.DS_Store
+Thumbs.db
+
+#.ipynb_checkpoints/

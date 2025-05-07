@@ -1,0 +1,15 @@
+{
+  "title": "Severe Hyperglycemia Protocol",
+  "threshold": "\u226515.0 mmol/L",
+  "steps": [
+    "Check for symptoms: dry mouth, fatigue, nausea, blurry vision, etc.",
+    "If CGM trend is \u2191 or \u2197 and no correction taken, assume active spike.",
+    "Hydrate immediately (300\u2013500ml water).",
+    "Take full correction dose based on CF if no insulin is on board.",
+    "Avoid any carbohydrate intake until BG <10.",
+    "If BG >17.0 mmol/L, hydrate more (up to 750ml) and take correction +10\u201320% if safe.",
+    "Avoid physical activity unless insulin is active.",
+    "Recheck BG in 60\u201390 min. If not dropping by >2.0 mmol/L, re-correct and continue fluids.",
+    "Seek medical help if BG >17.0 for 3+ hrs, if ketones are present, or if nausea/vomiting occurs."
+  ]
+}

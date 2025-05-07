@@ -1,0 +1,86 @@
+{
+  "version": "1.0",
+  "last_updated": "2025-05-06",
+  "sections": [
+    {
+      "title": "Default CGM Response Format",
+      "format": "[Time] | BG: [value] [arrow] | Alarm Set: [level]",
+      "example": "21:49 | BG: 7.1 \u2191 | Alarm Set: 10.0\nThat\u2019s fine. 10 mmol/L is a solid ceiling \u2014 no action needed unless you hit it."
+    },
+    {
+      "title": "Example CGM Responses",
+      "examples": [
+        {
+          "situation": "Post-meal stable reading",
+          "response": "14:45 | BG: 7.4 \u2192 | Alarm Set: 10.0\nFlat post-meal curve. No correction needed. Monitor again in 1h for delayed rise."
+        },
+        {
+          "situation": "Rising trend mid-afternoon",
+          "response": "15:18 | BG: 10.6 \u2191 | Alarm Set: 11.0\nApproaching upper limit. No immediate action, but reassess in 30 min."
+        },
+        {
+          "situation": "Falling trend, borderline hypo",
+          "response": "17:11 | BG: 4.5 \u2193 | Alarm Set: 3.9\nAct now \u2014 take 5\u201310g fast-acting carbs. Recheck in 15 min."
+        },
+        {
+          "situation": "Overnight drop risk",
+          "response": "02:30 | BG: 4.3 \u2192 | Alarm Set: 3.9\nSlightly low but stable. No action unless symptoms. Keep alarm active."
+        },
+        {
+          "situation": "Post-correction steady climb",
+          "response": "19:10 | BG: 8.9 \u2191 | Alarm Set: 10.0\nLet it ride unless it breaches 10+. Check again in 30\u201345 min."
+        }
+      ]
+    },
+    {
+      "title": "Meal Log Format",
+      "template": "DATE: YYYY-MM-DD\nTIME: HH:MM\nMEAL: [description]\nMACROS: [Carbs=Xg, Protein=Yg, Fat=Zg]\nPRE-BG: X.X mmol/L\nWAIT AFTER BOLUS: X min\nMEAL TYPE TAG (MTT): [HPNC / HFHP / MMX / UL / EXP]\nNOTES: [BG readings, corrections, symptoms, etc.]",
+      "meal_type_tags": [
+        "HPNC \u2013 High Protein, No Carb",
+        "HFHP \u2013 High Fat, High Protein",
+        "MMX \u2013 Mixed Meal",
+        "UL \u2013 Usual Lunch",
+        "EXP \u2013 Experimental"
+      ]
+    },
+    {
+      "title": "Alarm Strategy Guidelines",
+      "entries": [
+        {
+          "type": "LOW",
+          "level": "4.5",
+          "action": "Prepare 5\u201310g fast-acting carbs"
+        },
+        {
+          "type": "URGENT LOW",
+          "level": "3.9",
+          "action": "Take 15g fast-acting carbs, recheck in 15 min"
+        },
+        {
+          "type": "CRITICAL LOW",
+          "level": "3.5",
+          "action": "20g fast-acting carbs immediately, seek help if needed"
+        },
+        {
+          "type": "HIGH",
+          "level": "10.0",
+          "action": "Monitor if rising, correct if no IOB"
+        },
+        {
+          "type": "EARLY HIGH",
+          "level": "8.5",
+          "action": "Watch for delayed post-meal spike"
+        },
+        {
+          "type": "CRITICAL HIGH",
+          "level": "15.0",
+          "action": "Correct + hydrate, assess for ketones if unwell"
+        }
+      ]
+    },
+    {
+      "title": "Screenshot Timestamp Handling",
+      "note": "Always extract the current time from the top-left of LibreLink CGM screenshots."
+    }
+  ]
+}

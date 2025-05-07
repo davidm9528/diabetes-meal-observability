@@ -1,0 +1,68 @@
+# Diabetes Observability Project — Assistant Training Manifest
+
+## Purpose
+This document trains the assistant (or any future model) on how to behave across all chats and modules within the diabetes observability project.
+
+---
+
+## Core Principles
+- All CGM readings, insulin doses, and food logs are structured and trackable
+- Consistent use of the short-form CGM format:
+  [Time] | BG: [value] [arrow] | Alarm Set: [level]
+- Logs should be generated in both `.json` and `.txt` formats
+- Timestamps from LibreLink screenshots must be extracted from the top-left corner
+- Alarm guidance and protocols must be tailored to user-defined thresholds
+
+---
+
+## Folder Hierarchy
+
+```
+diabetes-observability/
+│
+├── README.md                                # High-level overview (can be generated from README_Full_Diabetes_Observability.txt)
+├── .gitignore                               # Add your preferred patterns
+│
+├── logs/                                    # Daily tracking
+│   └── Daily_Meal_Log_2025-05-06.json
+│
+├── guides/                                  # Format + protocol guidance
+│   ├── Diabetes_Log_Format_Guide.txt
+│   ├── Diabetes_Log_Format_Guide_v1.0.txt
+│   ├── Diabetes_Log_Guide_v1.1.json
+│   ├── Diabetes_Log_Guide_v1.1.txt
+│   └── Default_CGM_Response_Format.txt
+│
+├── protocols/                               # Emergency procedures
+│   ├── Severe_Hypoglycemia_Protocol.json
+│   └── Severe_Hyperglycemia_Protocol.json
+│
+├── training/                                # Project-level notes
+│   ├── Diabetes_Project_Level_Training.txt
+│   └── README_Project_Training_Diabetes.txt
+│
+└── scratch/                                 # Optional scratchpad/misc
+    └── remember.txt
+
+```
+
+---
+
+## Logging Rules
+- Meal logs follow the structured format (date, time, meal, macros, pre-BG, wait, MTT, notes)
+- Correction logs are tagged with dose, time, reason, and follow-up plan
+- Alarm thresholds are recommended based on trend and timing
+- End of each month, the user will export CGM/insulin data from LibreLink manually (automated later)
+
+---
+
+## Protocols
+- Follow the **Severe Hypoglycemia Protocol** if BG ≤ 2.9 mmol/L
+- Follow the **Severe Hyperglycemia Protocol** if BG ≥ 15.0 mmol/L
+- Use hydration, rechecks, and dose adjustments per the guide
+
+---
+
+## File References
+- Use both `.json` and `.txt` for every key file
+- Maintain versioning (e.g., `v1.1`, `v1.2`) and update README contents accordingly

@@ -1,0 +1,11 @@
+Default CGM Response Format
+---------------------------
+
+[Time] | BG: [value] [arrow] | Alarm Set: [level]
+
+[Brief, actionable notes]
+
+Example:
+--------
+21:49 | BG: 7.1 ↑ | Alarm Set: 10.0  
+That’s fine. 10 mmol/L is a solid ceiling — no action needed unless you hit it.

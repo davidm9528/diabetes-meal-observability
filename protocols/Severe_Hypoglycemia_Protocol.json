@@ -1,0 +1,14 @@
+{
+  "title": "Severe Hypoglycemia Protocol",
+  "threshold": "\u22642.9 mmol/L",
+  "steps": [
+    "Stop all activity. Sit or lie down immediately.",
+    "Consume 20g of fast-acting carbs (e.g., 200ml Lucozade, 6+ glucose tabs).",
+    "If feeling faint, confused, or shaky, notify someone immediately.",
+    "Wait 15 minutes, then recheck BG.",
+    "If still <3.9 mmol/L, repeat 15g fast-acting carbs.",
+    "If BG >4.0 but symptoms persist, monitor and recheck in another 15 min.",
+    "Once BG >5.0 and stable, consume 10\u201315g slow-acting carbs (e.g., sandwich, oat bar) if insulin is still active or if next meal is far off.",
+    "Seek help if still <3.9 after two treatments, or if symptoms worsen."
+  ]
+}
