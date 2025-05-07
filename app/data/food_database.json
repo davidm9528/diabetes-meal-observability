@@ -1,0 +1,125 @@
+{
+  "foods": [
+    {
+      "product": "NYC Bagels - 5 Plain Bagels",
+      "per_100g": {
+        "energy_kcal": 267,
+        "fat_g": 2.5,
+        "saturates_g": 0.5,
+        "carbohydrate_g": 50.1,
+        "sugar_g": 5.5,
+        "fibre_g": 3.4,
+        "protein_g": 9.4,
+        "salt_g": 0.85
+      },
+      "per_bagel": {
+        "weight_g": 85,
+        "energy_kcal": 227,
+        "fat_g": 2.1,
+        "saturates_g": 0.4,
+        "carbohydrate_g": 42.6,
+        "sugar_g": 4.6,
+        "fibre_g": 2.9,
+        "protein_g": 8.0,
+        "salt_g": 0.49
+      }
+    },
+    {
+      "product": "Tesco: Arla Raspberry Protein Yoghurt",
+      "per_100g": {
+        "energy_kcal": 71,
+        "fat_g": 0.2,
+        "saturates_g": 0.1,
+        "carbohydrate_g": 6.4,
+        "sugar_g": 6.0,
+        "protein_g": 10.0,
+        "salt_g": 0.1
+      },
+      "per_serving_200g": {
+        "energy_kcal": 142,
+        "fat_g": 0.4,
+        "saturates_g": 0.2,
+        "carbohydrate_g": 12.8,
+        "sugar_g": 12.0,
+        "protein_g": 20.0,
+        "salt_g": 0.2
+      },
+      "notes": ""
+    },
+    {
+      "product": "Spar: Breaded Cod Fillet",
+      "per_fillet": {
+        "energy_kcal": 200,
+        "fat_g": 7.3,
+        "saturates_g": 0.6,
+        "carbohydrate_g": 20.3,
+        "sugar_g": 0.5,
+        "protein_g": 12.9,
+        "salt_g": 0.79
+      },
+      "notes": ""
+    },
+    {
+      "product": "Champ (Mash Direct)",
+      "per_100g": {
+        "energy_kcal": 81,
+        "fat_g": 2.6,
+        "saturates_g": 1.4,
+        "carbohydrate_g": 13.5,
+        "sugar_g": 1.0,
+        "fibre_g": 1.9,
+        "protein_g": 1.3,
+        "salt_g": 0.39
+      },
+      "per_half_pack_210g": {
+        "energy_kcal": 162,
+        "fat_g": 5.5,
+        "saturates_g": 2.9,
+        "carbohydrate_g": 28.4,
+        "sugar_g": 2.1,
+        "fibre_g": 4.0,
+        "protein_g": 2.8,
+        "salt_g": 0.82
+      },
+      "notes": ""
+    },
+    {
+      "product": "Medallions (Pork or Chicken)",
+      "per_piece": {
+        "carbohydrate_g": 15.0,
+        "protein_g": 7.0,
+        "fat_g": 3.0
+      },
+      "serving_note": "Estimated per medallion, used in meal logs",
+      "logging_format": {
+        "MACROS": "Carbs=15g, Protein=7g, Fat=3g",
+        "MEAL": "1 medallion"
+      }
+    },
+    {
+      "product": "Fanta Orange",
+      "per_100ml": {
+        "carbohydrate_g": 11.0,
+        "sugar_g": 11.0
+      },
+      "serving_note": "Used for hypo treatment in 100–200ml servings",
+      "logging_format": {
+        "MACROS": "Carbs=11g, Sugar=11g (per 100ml)",
+        "MEAL": "100ml Fanta Orange"
+      }
+    },
+    {
+      "product": "Baked Beans (Small Tin)",
+      "per_tin": {
+        "carbohydrate_g": 31.3,
+        "protein_g": 9.4,
+        "fat_g": 0.4
+      },
+      "serving_note": "Full tin, as seen in label image",
+      "logging_format": {
+        "MACROS": "Carbs=31.3g, Protein=9.4g, Fat=0.4g",
+        "MEAL": "1 small tin baked beans"
+      }
+    }
+  ]
+}

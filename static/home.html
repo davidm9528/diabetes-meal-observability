@@ -1,33 +1,54 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Log CGM</title>
-</head>
-<body>
-  <!-- Button to go to meal logging page -->
-  <a href="/meal">
-    <button type="button">Log a Meal</button>
-  </a>
-  
-  <h2>Submit CGM Log</h2>
-  <form method="POST" action="/log">
-    <label for="bg">Blood Glucose (mmol/L):</label><br>
-    <input type="number" id="bg" name="bg" step="0.1" required><br><br>
-
-    <label for="trend">Trend:</label><br>
-    <select id="trend" name="trend" required>
-      <option value="→">→ Stable</option>
-      <option value="↑">↑ Rising</option>
-      <option value="↓">↓ Falling</option>
-    </select><br><br>
-
-    <label for="notes">Notes:</label><br>
-    <input type="text" id="notes" name="notes" value="Manual entry"><br><br>
-
-    <input type="submit" value="Submit">
-  </form>
-
-  <br><br>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Log CGM</title>
+  </head>
+  <body>
+    <!-- Button to go to meal logging page -->
+    <a href="/meal">
+      <button type="button">Log a Meal</button>
+    </a>
+    <h2>Submit CGM Log</h2>
+    <form method="POST" action="/log">
+      <label for="bg">Blood Glucose (mmol/L):</label><br />
+      <input type="number" id="bg" name="bg" step="0.1" required /><br /><br />
+      <label for="trend">Trend:</label><br />
+      <select id="trend" name="trend" required>
+        <option value="→">→ Stable</option>
+        <option value="↑">↑ Rising</option>
+        <option value="↓">↓ Falling</option></select
+      ><br /><br />
+      <label for="notes">Notes:</label><br />
+      <input
+        type="text"
+        id="notes"
+        name="notes"
+        value="Manual entry"
+      /><br /><br />
+      <!-- TODO:-->
+      <!-- Add a page to allow the user to enter new food into the DB -->
+      <!-- OR -->
+      <!-- FInd a large database of food, and query this dataset, undecided -->
+      <!-- Sentiment for response to meal and current BG -->
+      <!-- Read up on this -->
+      <!--    My Vision,
+        Build a personalized diabetes observability system that:
+        . Maintains a comprehensive food database
+          - All meals tagged with accurate macros (carbs, protein, fat)
+          - Structured for quick selection and consistent logging
+        . Enables detailed, structured meal logging
+          - Users log meals by selecting from the database
+          - Each log includes timestamp, pre-BG, insulin dose/timing, MTT, and notes
+        . Integrates monthly CGM and insulin data
+          - Automatically processes reports from my CGM provider
+          - Aligns blood glucose trends and insulin doses with logged meals
+        . Analyzes the effect of food and insulin on blood glucose
+          - Learns how different meals impact BG over time
+          - Recommends personalized dosing, timing, alarms, and corrections 
+-->
+      <input type="submit" value="Submit" />
+    </form>
+    <br /><br />
+  </body>
 </html>

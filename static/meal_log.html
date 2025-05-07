@@ -1,36 +1,42 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Log Meal</title>
-</head>
-<body>
-  
-<a href="/home">
-  <button type="button">Back to CGM Log</button>
-</a>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Log Meal</title>
+  </head>
 
-  <h2>Log a Meal</h2>
-  <form method="POST" action="/log-meal">
-    <label>Meal:</label><br>
-    <input type="text" name="meal" required><br><br>
+  <body>
+    <a href="/home">
+      <button type="button">Back to CGM Log</button>
+    </a>
 
-    <label>Carbs (g):</label><br>
-    <input type="number" name="carbs" required><br><br>
+    <h2>Log a Meal</h2>
+    <form method="POST" action="/log-meal">
+      <label>Meal:</label><br />
+      // TODO: Add a database of meals, and allow the user to select from this
+      list <input type="text" name="meal" required /><br /><br />
 
-    <label>Protein (g):</label><br>
-    <input type="number" name="protein" required><br><br>
+      <label>Carbs (g):</label><br />
+      <input type="number" name="carbs" required /><br /><br />
 
-    <label>Fats (g):</label><br>
-    <input type="number" name="fats" required><br><br>
+      <label>Protein (g):</label><br />
 
-    <label>Pre-BG (mmol/L):</label><br>
-    <input type="number" step="0.1" name="pre_bg" required><br><br>
+      <input type="number" name="protein" required /><br /><br />
 
-    <label>Notes:</label><br>
-    <input type="text" name="notes" value="Anything else?"><br><br>
+      <label>Fats (g):</label><br />
+      <input type="number" name="fats" required /><br /><br />
 
-    <input type="submit" value="Submit">
-  </form>
-</body>
+      <label>Pre-BG (mmol/L):</label><br />
+      <input type="number" step="0.1" name="pre_bg" required /><br /><br />
+
+      <label>Notes:</label><br />
+      <input
+        type="text"
+        name="notes"
+        value="Anything else on your mind?"
+      /><br /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
 </html>
